@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D3Pie</title>
+</head>
+<body>
+
+	<script src="http://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+	<script src="d3pie.min.js"></script>
+
+	<div id="pieChart">
+		<script>
+		var pie = new d3pie("pieChart", {
+			"data" : {
+				"content" : [
+					{"label":"Master Course", "value":2807},
+					{"label":"Affiliates", "value":1072},
+					{"label":"Ebook", "value":972}
+				]
+			}
+		});
+		</script>
+	</div>
+
+</body>
+</html>
